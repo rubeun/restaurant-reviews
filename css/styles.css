@@ -150,6 +150,7 @@ nav h1 a {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -316,5 +317,9 @@ nav h1 a {
 }
 
 @media screen and (min-width: 700px) {
+  
+}
+
+@media screen and (min-width: 1200px) {
   
 }
