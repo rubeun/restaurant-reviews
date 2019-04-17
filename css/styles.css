@@ -97,12 +97,23 @@ nav h1 a {
     color: #01447e;
     text-decoration: underline;
 }
-/* ====================== Map ====================== */
+/* ====================== Map Container ====================== */
+#map-container {
+
+}
+
 #map {
   height: 400px;
   width: 100%;
   background-color: #ccc;
 }
+
+/* ====================== Restaurant Container ====================== */
+#restaurants-container {
+
+}
+
+
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
@@ -279,13 +290,24 @@ nav h1 a {
 
 /* ====================== Responsive Styles ====================== */
 
-/* @media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   nav {
     height: 40px;
   }
   nav h1 a {
     font-size: 10pt;
     letter-spacing: 4px;
+  }
+  .filter-options {
+    padding: 5px 0;
+    height: 100px;
+    flex-flow: column;
+  }
+
+  #footer {
+    font-size: 6.5pt;
+    letter-spacing: 0px;
+    padding: 5px 0;
   }
 }
 
@@ -295,4 +317,4 @@ nav h1 a {
 
 @media screen and (min-width: 700px) {
   
-} */
+}
