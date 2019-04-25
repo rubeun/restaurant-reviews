@@ -11,7 +11,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
   initMap(); // added 
   fetchNeighborhoods();
   fetchCuisines();
+  initServiceWorkers();
 });
+
+/**
+ * Initialise Service Workers.
+ */
+initServiceWorkers = () => {
+  if (!navigator.serviceWorker) return; // if no service worker, skip
+
+  navigator.serviceWorker.register('/sw.js').then(function(reg) {
+
+    console.log("Service Worker Registered!");
+    // Listen for the controlling service worker changing and reload page
+    // navigator.serviceWorker.addEventListener('controllerchange', function() {
+    //   window.location.reload();
+    // });
+
+  }).catch(function(err) {
+    console.log("Service Worker Failed To Register!", err);
+  });  
+}
+
 
 /**
  * Fetch all neighborhoods and set their HTML.
