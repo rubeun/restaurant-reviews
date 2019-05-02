@@ -96,11 +96,8 @@ nav h1 a {
     color: #01447e;
     text-decoration: underline;
 }
+
 /* ====================== Map Container ====================== */
-#map-container {
-
-}
-
 #map {
   height: 400px;
   width: 100%;
@@ -110,11 +107,6 @@ nav h1 a {
 .leaflet-control {
   display: none;
 }
-/* ====================== Restaurant Container ====================== */
-#restaurants-container {
-
-}
-
 
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
@@ -378,17 +370,9 @@ nav h1 a {
   }
 }
 
-@media screen and (min-width: 550px) {
-  
-}
-
 @media screen and (min-width: 700px) {
   #restaurant-container, 
   #reviews-container {
     padding: 75px 10px 10px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  
 }
